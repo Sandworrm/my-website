@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Church Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color:rgb(177, 165, 102);
+      border-color:rgb(177, 165, 102);
+    }
+    .navbar .navbar-brand, .navbar .navbar-nav>li>a {
+      color: white;
+    }
+    .carousel-inner>.item>img {
+      width: 100%;
+      height: auto;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .icon {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .map-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .img-gallery img {
+      margin-bottom: 15px;
+    }
+    .pastor {
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .pastor img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+    }
+    .sermon-options {
+      margin-top: 10px;
+    }
+    .sermon-options a {
+      margin-right: 15px;
+      font-size: 18px;
+    }
+    .events-bg {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .event-details {
+      margin-top: 20px;
+    }
+    .event-details .glyphicon {
+      margin-right: 10px;
+    }
+    .social-icons a {
+      font-size: 24px;
+      margin: 0 10px;
+      color: black;
+      text-decoration: none;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer a {
+      color: rgb(177, 165, 102);
+      text-decoration: none;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#home">Church</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#sermons">Sermons</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Banner -->
+<header id="home" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="https://via.placeholder.com/1200x500?text=Welcome+to+Our+Church" alt="Slide 1">
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/1200x500?text=Join+Our+Community" alt="Slide 2">
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/1200x500?text=Experience+Faith+and+Fellowship" alt="Slide 3">
+    </div>
+  </div>
+  <a class="left carousel-control" href="#home" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#home" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</header>
+
+<!-- About Section -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About Us</h2>
+        <p>We are a community dedicated to worship and fellowship, welcoming everyone to join us in our mission to spread faith and love.</p>
+        <button class="btn btn-primary">Join Us</button>
+      </div>
+      <div class="col-md-6">
+        <img src="https://via.placeholder.com/500x300?text=Church+Image" class="img-responsive" alt="Church Image">
+      </div>
+    </div>
+    <div class="row text-center" style="margin-top: 40px;">
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-heart icon"></span>
+        <h4>Our Values</h4>
+        <p>Compassion, Faith, and Love</p>
+      </div>
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-globe icon"></span>
+        <h4>Our Mission</h4>
+        <p>To spread the word of God and make a positive impact in our community</p>
+      </div>
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-flag icon"></span>
+        <h4>Our Vision</h4>
+        <p>To be a beacon of hope and a source of inspiration for all</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pastors Section -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="row text-center">
+      <h2>Our Pastors</h2>
+      <div class="col-md-3">
+        <div class="pastor">
+          <img src="https://via.placeholder.com/150?text=Pastor+1" alt="Pastor 1">
+          <h4>Pastor John Doe</h4>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="pastor">
+          <img src="https://via.placeholder.com/150?text=Pastor+2" alt="Pastor 2">
+          <h4>Pastor Jane Smith</h4>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="pastor">
+          <img src="https://via.placeholder.com/150?text=Pastor+3" alt="Pastor 3">
+          <h4>Pastor Michael Brown</h4>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="pastor">
+          <img src="https://via.placeholder.com/150?text=Pastor+4" alt="Pastor 4">
+          <h4>Pastor Emily Wilson</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sermons Section -->
+<section id="sermons" class="section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3>Experience God's Presence</h3>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 40px;">
+      <div class="col-md-4">
+        <img src="https://via.placeholder.com/300x300?text=Bible+Image" class="img-responsive" alt="Bible Image">
+      </div>
+      <div class="col-md-8">
+        <h4>Sunday Sermon: The Path to Righteousness</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat justo quis turpis pharetra, at commodo ligula bibendum. Sed aliquam justo nec massa sollicitudin convallis.</p>
+        <div class="sermon-options">
+          <a href="#" class="glyphicon glyphicon-copy" title="Copy"></a>
+          <a href="#" class="glyphicon glyphicon-save" title="Save"></a>
+          <a href="#" class="glyphicon glyphicon-headphones" title="Listen"></a>
+          <a href="#" class="glyphicon glyphicon-download" title="Download"></a>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center" style="margin-top: 60px;">
+      <h3>Popular Sermons</h3>
+      <div class="col-md-4">
+        <img src="https://via.placeholder.com/350x200?text=Sermon+1" class="img-responsive" alt="Sermon 1">
+        <h4>The Power of Prayer</h4>
+        <div class="sermon-options">
+          <a href="#" class="glyphicon glyphicon-copy" title="Copy"></a>
+          <a href="#" class="glyphicon glyphicon-save" title="Save"></a>
+          <a href="#" class="glyphicon glyphicon-headphones" title="Listen"></a>
+          <a href="#" class="glyphicon glyphicon-download" title="Download"></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="https://via.placeholder.com/350x200?text=Sermon+2" class="img-responsive" alt="Sermon 2">
+        <h4>Finding Faith</h4>
+        <div class="sermon-options">
+          <a href="#" class="glyphicon glyphicon-copy" title="Copy"></a>
+          <a href="#" class="glyphicon glyphicon-save" title="Save"></a>
+          <a href="#" class="glyphicon glyphicon-headphones" title="Listen"></a>
+          <a href="#" class="glyphicon glyphicon-download" title="Download"></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="https://via.placeholder.com/350x200?text=Sermon+3" class="img-responsive" alt="Sermon 3">
+        <h4>Grace and Gratitude</h4>
+        <div class="sermon-options">
+          <a href="#" class="glyphicon glyphicon-copy" title="Copy"></a>
+          <a href="#" class="glyphicon glyphicon-save" title="Save"></a>
+          <a href="#" class="glyphicon glyphicon-headphones" title="Listen"></a>
+          <a href="#" class="glyphicon glyphicon-download" title="Download"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Events Section -->
+<section id="events" class="section">
+  <div class="container events-bg">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="https://via.placeholder.com/300x300?text=Event+Image" class="img-responsive" alt="Event Image">
+      </div>
+      <div class="col-md-8">
+        <h4>Upcoming Event: Community Outreach</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat justo quis turpis pharetra, at commodo ligula bibendum. Sed aliquam justo nec massa sollicitudin convallis.</p>
+        <div class="event-details">
+          <p><span class="glyphicon glyphicon-calendar"></span> Saturday, June 25, 2024</p>
+          <p><span class="glyphicon glyphicon-map-marker"></span> 123 Church Street, City</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Social Media Section -->
+<section class="section text-center">
+  <div class="container">
+    <h4>Follow Us</h4>
+    <div class="social-icons">
+      <a href="#"><span class="glyphicon glyphicon-remove" title="X"></span></a>
+      <a href="#"><span class="glyphicon glyphicon-thumbs-up" title="Facebook"></span></a>
+      <a href="#"><span class="glyphicon glyphicon-camera" title="Instagram"></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Map Section -->
+<section class="section map-container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019393897856!2d-122.08535748468193!3d37.4219997798238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24c5f5f5f5f%3A0x42a6c63af3e2b1b7!2sGoogleplex!5e0!3m2!1sen!2sus!4v1614908274004!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2024 All rights reserved | This template is made with <span style="color: red;">&hearts;</span> by <a href="#">Hawk Dvrk</a></p>
+  </div>
+</footer>
+
+<script>
+  $(document).ready(function() {
+    $('body').scrollspy({ target: '.navbar-fixed-top', offset: 60 });
+    $('.navbar-nav li a').click(function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top - 60
+      }, 1500, 'easeInOutExpo');
+      event.preventDefault();
+    });
+  });
+</script>
+
+</body>
+</html>
